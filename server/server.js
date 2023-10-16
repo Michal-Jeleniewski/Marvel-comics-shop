@@ -7,14 +7,14 @@ app.use(express.json());
 const bodyParser = require('body-parser')
 const LOGS = require("./accountApi");
 const Comment = require('./comments');
+const mongoConnectionLink = require('./connectionData');
 
 app.use(bodyParser.json())
 app.use("/api", LOGS)
-mongoose.connect("mongodb+srv://satora:gapa1525@cluster0.m1tgxtj.mongodb.net/test")
+mongoose.connect(mongoConnectionLink)
   .then(() => {
     app.listen(5000, () => console.log('Server set http://localhost:5000'));
   })
-//TODO gitignore
 app.get('/heroes', async (req, res) => {
   let offset = 0
   const heroes = []

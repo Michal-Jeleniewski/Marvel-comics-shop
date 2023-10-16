@@ -146,6 +146,9 @@ button {
   width: 80px;
   height: 20px;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 12px;
   right: 0px;
 }
@@ -153,7 +156,10 @@ button {
 .log_manage {
   width: 100px;
   position: absolute;
-  right: 2vw
+  right: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .highlighted_click {
@@ -495,6 +501,9 @@ button {
 .log_manage a {
   text-decoration: none;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Home,
@@ -508,6 +517,9 @@ button {
   background-color: rgb(12, 12, 11);
   transition: transform 0.3s ease-in-out;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
